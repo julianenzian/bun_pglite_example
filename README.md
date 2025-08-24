@@ -15,3 +15,10 @@ db.ts:5 Fetch API cannot load bun://node_modules/@electric-sql/pglite/dist/pglit
 Uncaught (in promise) TypeError: Failed to fetch. URL scheme "bun" is not supported.
 Uncaught (in promise) TypeError: Failed to fetch. URL scheme "bun" is not supported.
 ```
+
+Ideally, there would be a way to take advantage of Bun-style asset imports, which result in the .wasm and .data files at:
+
+```
+pgliteWasmUrl: /_bun/asset/71cff5d3fbbb0e04.wasm
+pgliteDataUrl: /_bun/asset/6be4333aadac69d8.data
+```
