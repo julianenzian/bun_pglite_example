@@ -1,21 +1,17 @@
-# bun-react-tailwind-template
+# Minimal Bun PGLite Failure Example
 
-To install dependencies:
+To reproduce, run these and open http://localhost:3000:
 
-```bash
-bun install
 ```
-
-To start a development server:
-
-```bash
+bun install
 bun dev
 ```
 
-To run for production:
+Results in:
 
-```bash
-bun start
 ```
-
-This project was created using `bun init` in bun v1.2.17. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+db.ts:5 Fetch API cannot load bun://node_modules/@electric-sql/pglite/dist/pglite.wasm. URL scheme "bun" is not supported.
+db.ts:5 Fetch API cannot load bun://node_modules/@electric-sql/pglite/dist/pglite.data. URL scheme "bun" is not supported.
+Uncaught (in promise) TypeError: Failed to fetch. URL scheme "bun" is not supported.
+Uncaught (in promise) TypeError: Failed to fetch. URL scheme "bun" is not supported.
+```
