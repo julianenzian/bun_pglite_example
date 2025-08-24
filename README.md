@@ -10,10 +10,10 @@ bun dev
 Results in:
 
 ```
-db.ts:5 Fetch API cannot load bun://node_modules/@electric-sql/pglite/dist/pglite.wasm. URL scheme "bun" is not supported.
-db.ts:5 Fetch API cannot load bun://node_modules/@electric-sql/pglite/dist/pglite.data. URL scheme "bun" is not supported.
-Uncaught (in promise) TypeError: Failed to fetch. URL scheme "bun" is not supported.
-Uncaught (in promise) TypeError: Failed to fetch. URL scheme "bun" is not supported.
+Not allowed to load local resource: file:///Users/j/bun_pglite_example/node_modules/@electric-sql/pglite/dist/pglite.wasm
+Not allowed to load local resource: file:///Users/j/bun_pglite_example/node_modules/@electric-sql/pglite/dist/pglite.data
+Uncaught (in promise) TypeError: Failed to fetch
+Uncaught (in promise) TypeError: Failed to fetch
 ```
 
 Ideally, there would be a way to take advantage of Bun-style asset imports, which result in the .wasm and .data files at:
